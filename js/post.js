@@ -24,8 +24,8 @@ const getPost = () => {
 }
 
 const buildPost = (data) => {
-    const postDate = new Date(parseInt(blogPost.added_date)).toDateString();
-    const postImage = `${API_BASE_URL}${blogPost.post_image}`;
+    const postDate = new Date(parseInt(data.added_date)).toDateString();
+    const postImage = `${API_BASE_URL}${data.post_image}`;
     // HINT: Convert the date number to a Date string
     document.querySelector("header").style.backgroundImage =`url(${postImage})`
     document.getElementById("individual-post-title").innerText = data.title;

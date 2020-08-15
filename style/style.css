@@ -3,10 +3,6 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.post-link {
-    text-decoration: none;
-}
-
 header {
     min-height: 350px;
     color: white;
@@ -37,24 +33,6 @@ header::after{
     background-color: rgba(0,0,0,0.7);
 }
 
-.profile-image{
-    width: 100px;
-    height: 100px;
-    background-color: white;
-    border-radius: 50%;
-    background-image: url(/assets/profile.png);
-    background-size: cover;
-}
-
-.profile-name{
-    font-size: 3em;
-    font-weight: bold;
-}
-
-.subtext{
-    margin-top: 8px;
-}
-
 .main {
     margin-top: 32px;
     display: flex;
@@ -67,6 +45,20 @@ header::after{
     width: 100%;
     padding-left: 16px;
     padding-right: 16px;
+}
+
+.profile-image{
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    border-radius: 50%;
+    background-image: url(/assets/profile.png);
+    background-size: cover;
+}
+
+.profile-name, .title{
+    font-size: 3em;
+    font-weight: bold;
 }
 
 .post {
@@ -96,6 +88,9 @@ header::after{
     padding: 24px;
 }
 
+.post-link {
+    text-decoration: none;
+}
 
 .post-date {
     font-size: 12px;
@@ -152,6 +147,10 @@ header::after{
     padding: 5px 8px;
 }
 
+.subtext{
+    margin-top: 8px;
+}
+
 footer {
     min-height: 100px;
     background-color: #eaecee70;
@@ -161,8 +160,4 @@ footer {
     align-items: center;
     margin-top: 40px;
     font-size: 14px;
-}
-
-a.post-link {
-    text-decoration: none;
 }
