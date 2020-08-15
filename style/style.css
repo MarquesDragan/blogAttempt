@@ -9,16 +9,18 @@ body {
 
 header {
     min-height: 350px;
-    background-color: blue;
     color: white;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-image: url(/assets/banner.jpeg);
     background-size: cover;
     background-position: center;
     position: relative;
+}
+
+.home-page header {
+    background-image: url(/assets/banner.jpeg);
 }
 
 header > * {
@@ -159,4 +161,8 @@ footer {
     align-items: center;
     margin-top: 40px;
     font-size: 14px;
+}
+
+a.post-link {
+    text-decoration: none;
 }
